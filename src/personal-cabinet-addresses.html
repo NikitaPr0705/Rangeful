@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>New site</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="semi-transparent-bg"></div>
+  @include('partials/header.html')
+  <main>
+
+    <section class="personal-cabinet-section show-order-section main-section">
+      <div onclick="show('none')" id="gray"></div>
+      <div id="window">
+        <!-- Картинка крестика -->
+        <div>
+          <form action="" class="form">
+            <img class="close-modal" src="./img/close-burger.svg" alt="" onclick="show('none')">
+            <div class="form-title">
+              <span>Добавить платежный адрес</span>
+            </div>
+            <div class="inputs-wrapper">
+
+              <div class="inputs-row-wrapper">
+                <div class="input-wrapper">
+                  <label for="form-name">Ваше имя </label>
+                  <input type="text" placeholder="Иван" id='form-name'>
+                </div>
+                <div class="input-wrapper">
+                  <label for="form-name">Ваша фамилия </label>
+                  <input type="text" placeholder="Иванов" id='form-surname'>
+                </div>
+                <div class="input-wrapper">
+                  <label for="form-email">Ваш Email </label>
+                  <input type="email" placeholder='youremail@gmail.com' id="form-email">
+                </div>
+                <div class="input-wrapper">
+                  <label for='form-phone'>Ваш номер телефона </label>
+                  <input type="phone" placeholder='+7 000 00 00 0000' id="form-phone">
+                </div>
+              </div>
+              <div class="selects-wrapper">
+                <div class="wrapper col">
+                  <span class='select-title'>Страна/ регион *</span>
+                  <div class='custom-select'>
+                    <select name="" id="">
+                      <option value="choose-country">Выберите страну/ регион</option>
+                      <option value="country1">Страна1</option>
+                      <option value="country2">Страна2</option>
+                      <option value="country3">Страна3</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="inputs-row-wrapper">
+                <div class="input-wrapper">
+                  <label for="form-name">Область *</label>
+                  <input type="text" placeholder="Московская" id='form-name'>
+                </div>
+                <div class="input-wrapper">
+                  <label for="form-name">Населенный пункт *</label>
+                  <input type="text" placeholder="Москва" id='form-surname'>
+                </div>
+                <div class="input-wrapper">
+                  <label for="form-email">Адрес *</label>
+                  <input type="email" placeholder='Номер дома и название улицы' id="form-email">
+                </div>
+                <div class="input-wrapper">
+                  <label for='form-phone'>Индекс *</label>
+                  <input type="phone" placeholder='210000' id="form-phone">
+                </div>
+              </div>
+              <button class="btn bg-brand1">Сохранить адрес</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="section-inner">
+
+        <div class="breadcrumbs">
+          <ul class='breadcrumbs__list'>
+            <li class="breadcrumbs__item">
+              <a class='breadcrumbs__link' href="#">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class='breadcrumbs__link' href="#">Личный кабинет: Мои адреса</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class='breadcrumbs__link' href="#"> Заказ №101</a>
+            </li>
+
+          </ul>
+        </div>
+        <h2 class="section-title">Мои адреса</h2>
+
+        <div class="wrapper">
+          <div class="card-block">
+            <div class="card">
+              <div class="card-header">
+                <picture>
+                  <img src="./img/pers-cab-avatar.png" alt="">
+                </picture>
+                <div class="header-info">
+                  <span class="header-text header-text--main">Иванов Иван Иванович</span>
+                  <span class="header-text">youremail@gmail.com </span>
+                  <span class="header-text">+7 000 000 00 00 </span>
+                </div>
+              </div>
+              <div class="row">
+                <a class='row__text-item order row__text-item--bigger active' href="#">Мои
+                  заказы</a>
+                <a class='row__text-item addresses row__text-item--bigger' href="#">Мои адреса</a>
+
+              </div>
+              <div class="row">
+                <a href="#" class="row__text-item subscription">Управление подпиской</a>
+                <a href="#" class="row__text-item edit">Редактирование личных данных</a>
+                <a href="#" class="row__text-item logout">Выход</a>
+              </div>
+            </div>
+          </div>
+          <div class="main-content">
+            <div class="addresses-block">
+
+              <div class="delivery-info">
+                <a href="#" class="row__text-item edit"></a>
+                <h3 class="block-title">Платежный адрес:</h3>
+                <div class="delivery-info__block">
+                  <div class="wrapper col">
+                    <span class='prompt'>Ваше ФИО:</span>
+                    <span class='contact-info-text'>Иванов Иван Иванович</span>
+                  </div>
+                  <div class="wrapper col">
+                    <span class='prompt'>Ваш Email:</span>
+                    <span class='contact-info-text'>youremail@gmail.com</span>
+                  </div>
+                  <div class="wrapper col">
+                    <span class='prompt'>Ваш номер телефона:</span>
+                    <span class='contact-info-text'>+7 800 000 00 00</span>
+                  </div>
+
+                  <div class="wrapper col">
+                    <span class='prompt'>Адрес плательщика:</span>
+                    <span class='contact-info-text'>ул. Советская 217, кв 107, г. Москва,
+                      обл. Московская, 21000, Россия</span>
+                  </div>
+                </div>
+                <a href="#" class="btn bg-white-brand2 open-modal">Добавить адрес</a>
+              </div>
+              <div class="delivery-info">
+                <a href="#" class="row__text-item edit"></a>
+                <h3 class="block-title">Адрес доставки:</h3>
+                <div class="delivery-info__block">
+                  <div class="wrapper col">
+                    <span class='prompt'>Ваше ФИО:</span>
+                    <span class='contact-info-text'>Иванов Иван Иванович</span>
+                  </div>
+                  <div class="wrapper col">
+                    <span class='prompt'>Ваш Email:</span>
+                    <span class='contact-info-text'>youremail@gmail.com</span>
+                  </div>
+                  <div class="wrapper col">
+                    <span class='prompt'>Ваш номер телефона:</span>
+                    <span class='contact-info-text'>+7 800 000 00 00</span>
+                  </div>
+
+                  <div class="wrapper col">
+                    <span class='prompt'>Адрес доставки:</span>
+                    <span class='contact-info-text'>ул. Советская 217, кв 107, г. Москва,
+                      обл. Московская, 21000, Россия</span>
+                  </div>
+                </div>
+                <a href="#" class="btn bg-white-brand2 open-modal">Добавить адрес</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  @include('partials/footer.html')
+  <!-- @include('html/h1.html') пример инклуда -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

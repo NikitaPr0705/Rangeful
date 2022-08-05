@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>New site</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="semi-transparent-bg"></div>
+  @include('partials/header.html')
+  <main>
+
+    <section class="personal-cabinet-section subscription-section main-section">
+
+
+      <div class="section-inner">
+        <div class="breadcrumbs">
+          <ul class='breadcrumbs__list'>
+            <li class="breadcrumbs__item">
+              <a class='breadcrumbs__link' href="#">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class='breadcrumbs__link' href="#">Личный кабинет: Оформить подписку</a>
+            </li>
+
+          </ul>
+        </div>
+        <h2 class="section-title">Оформить подписку</h2>
+
+        <div class="wrapper">
+          <div class="card-block">
+            <div class="card">
+              <div class="card-header">
+                <picture>
+                  <img src="./img/pers-cab-avatar.png" alt="">
+                </picture>
+                <div class="header-info">
+                  <span class="header-text header-text--main">Иванов Иван Иванович</span>
+                  <span class="header-text">youremail@gmail.com </span>
+                  <span class="header-text">+7 000 000 00 00 </span>
+                </div>
+              </div>
+              <div class="row">
+                <a class='row__text-item order row__text-item--bigger active' href="#">Мои
+                  заказы</a>
+                <a class='row__text-item addresses row__text-item--bigger' href="#">Мои адреса</a>
+
+              </div>
+              <div class="row">
+                <a href="#" class="row__text-item subscription">Управление подпиской</a>
+                <a href="#" class="row__text-item edit">Редактирование личных данных</a>
+                <a href="#" class="row__text-item logout">Выход</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="main-content">
+            <div class="subscription-block">
+              <div class="subs-text-wrapper">
+                <span class="subs-text">Подписка RANGEFUL не оформлена.</span>
+                <span class="subs-text">С подпиской RANGEFUL вас ждет рассылка обновления товаров, акции и многое
+                  другое.</span>
+              </div>
+              <div>
+                <label class='check option'>
+                  <input class='check__input' type="checkbox" name="checkbox">
+                  <span class='check__box'>
+                    <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 5L4 8L11 1" stroke="#0B1F35" stroke-linecap="round" />
+                    </svg>
+                  </span>
+                  Получать рассылку от RANGEFUL на мой Email
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  @include('partials/footer.html')
+  <!-- @include('html/h1.html') пример инклуда -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+// @include font-face("Muller", "../fonts/MullerRegular", 400, normal);
+// подключать font-face с использованием миксина из __font-face
+
+// @font-face {
+//     font-family: "Helvetica Neue";
+//     src: url("../fonts/HelveticaNeueCyr-Light.ttf") format("ttf");
+//     font-weight: 300;
+//     font-display: swap;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: "Helvetica Neue";
+//     src: url("../fonts/HelveticaNeueCyr-Roman.ttf") format("ttf");
+//     font-weight: 400;
+//     font-display: swap;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: "Helvetica Neue";
+//     src: url("../fonts/HelveticaNeueCyr-Medium.ttf") format("ttf");
+//     font-weight: 500;
+//     font-display: swap;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: "Helvetica Neue";
+//     src: url("../fonts/HelveticaNeueCyr-Bold.ttf") format("ttf");
+//     font-weight: bold;
+//     font-display: swap;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: "Cochin";
+//     src: url("../fonts/LeCochinBQ-Italic.otf") format("otf");
+//     font-weight: 300;
+//     font-display: swap;
+//     font-style: italic;
+// }

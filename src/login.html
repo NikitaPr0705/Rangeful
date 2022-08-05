@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>New site</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div class="semi-transparent-bg"></div>
+  @include('partials/header.html')
+  <main>
+
+    <section class="login-section main-section">
+
+      <div class="section-inner-wrap">
+        <img class='quarter-top-right-bg' src="./img/quarter-right-top-bg-img.png" alt="">
+        <img class='quarter-bottom-left-bg' src="./img/quarter-left-bottom-bg-img.png" alt="">
+      <div class="section-inner">
+
+        <div class="breadcrumbs">
+          <ul class='breadcrumbs__list'>
+            <li class="breadcrumbs__item">
+              <a class='breadcrumbs__link' href="#">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class='breadcrumbs__link' href="#">Вход в аккаунт</a>
+            </li>
+
+
+          </ul>
+        </div>
+
+
+        <div class="wrapper col">
+          <div class="form-block">
+            <form action="#" class="form">
+              <div class="form-title">
+                <span>Вход в аккаунт</span>
+              </div>
+              <div class="inputs-wrapper">
+                <div class="input-wrapper">
+                  <label for="form-email">Ваш Email </label>
+                  <input type="email" placeholder='youremail@gmail.com' id="form-email">
+                </div>
+                <div class="input-wrapper password-input">
+                  <label for="password-input">Ваш пароль * </label>
+                  <input type="password" id="password-input" placeholder="Введите пароль" name="password">
+                  <img class='password-eye' src="./img/eye.svg" alt="">
+
+                </div>
+              </div>
+              <button class="btn bg-brand1">Войти</button>
+            </form>
+          </div>
+
+          <div class="register-link-block">
+            <span>Вы еще не зарегистрированы на нашем сайте?</span>
+            <a href="#" class="btn bg-white-brand2 register-pass-link">Пройти регистрацию</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+  </main>
+  @include('partials/footer.html')
+  <!-- @include('html/h1.html') пример инклуда -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

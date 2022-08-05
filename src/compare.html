@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>New site</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="semi-transparent-bg"></div>
+  @include('partials/header.html')
+  <main>
+
+    <section class="compare-section main-section ">
+
+      <div class="section-inner-wrap">
+        <img class='quarter-top-right-bg' src="./img/quarter-right-top-bg-img.png" alt="">
+        <img class='quarter-bottom-left-bg' src="./img/quarter-left-bottom-bg-img.png" alt="">
+      <div class="section-inner">
+        <div class="breadcrumbs">
+          <ul class='breadcrumbs__list'>
+            <li class="breadcrumbs__item">
+              <a class='breadcrumbs__link' href="#">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class='breadcrumbs__link' href="#">Сравнение</a>
+            </li>
+
+          </ul>
+        </div>
+        <h2 class="section-title">Сравнение</h2>
+
+        <div class="compare-block">
+          <div class="compare-characteristics">
+              <div class="compare-characteristic">
+                <span>Товар</span>
+              </div>
+              <div class="compare-characteristic">
+                <span>Цена</span>
+              </div>
+              <div class="compare-characteristic">
+                <span>Добавлено</span>
+              </div>
+              <div class="compare-characteristic">
+                <span>Статус</span>
+              </div>
+          </div>
+          <div class="compare-items">
+            <div class="item discount-item">
+              <span class='discount-percent'>-20%</span>
+              <a href="#" class="close-link">
+                <img src="./img/close.svg" alt="" />
+              </a>
+              <h3 class="item-title">
+                GSM REPEATER 900 + 800 MHz (Voice + 4G / LTE internet) - 300 m2
+              </h3>
+              <img class='item-img' src="./img/compare-img.png" alt="">
+              <span class="vendor-code mobile-shown">Арт: 01010101</span>
+
+              <span class="item-price">389,0 €</span>
+              <span class="item-date">10.10.21</span>
+              <span class="item-status">В наличии</span>
+              <a href="#" class="btn bg-brand2">Добавить в корзину</a>
+            </div>
+            <div class="item">
+              <a href="#" class="close-link">
+                <img src="./img/close.svg" alt="" />
+              </a>
+              <h3 class="item-title">
+                GSM REPEATER 900 + 800 MHz (Voice + 4G / LTE internet) - 300 m2
+              </h3>
+              <img class='item-img' src="./img/compare-img.png" alt="">
+              <span class="vendor-code mobile-shown">Арт: 01010101</span>
+
+              <span class="item-price">389,0 €</span>
+              <span class="item-date">10.10.21</span>
+              <span class="item-status">В наличии</span>
+              <a href="#" class="btn bg-brand2">Добавить в корзину</a>
+            </div>
+            <div class="item discount-item">
+              <span class='discount-percent'>-20%</span>
+              <a href="#" class="close-link">
+                <img src="./img/close.svg" alt="" />
+              </a>
+              <h3 class="item-title">
+                GSM REPEATER 900 + 800 MHz (Voice + 4G / LTE internet) - 300 m2
+              </h3>
+              <img class='item-img' src="./img/compare-img.png" alt="">
+              <span class="vendor-code mobile-shown">Арт: 01010101</span>
+
+              <span class="item-price">389,0 €</span>
+              <span class="item-date">10.10.21</span>
+              <span class="item-status">В наличии</span>
+              <a href="#" class="btn bg-brand2">Добавить в корзину</a>
+            </div>
+          </div>
+          <div class="comparing-rows">
+            <div class="row">
+              <span class="row-title">Цена</span>
+              <div class="row-characteristics price">
+                <span>389,0 €</span>
+                <span>389,0 €</span>
+                <span>389,0 €</span>
+              </div>
+            </div>
+            <div class="row">
+              <span class="row-title">Дата добавления</span>
+              <div class="row-characteristics date">
+                <span>10.10.2021</span>
+                <span>10.10.2021</span>
+                <span>10.10.2021</span>
+              </div>
+            </div>
+            <div class="row">
+              <span class="row-title">Статус</span>
+              <div class="row-characteristics status">
+                <span>В наличии</span>
+                <span>В наличии</span>
+                <span>В наличии</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+  </main>
+  @include('partials/footer.html')
+  <!-- @include('html/h1.html') пример инклуда -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

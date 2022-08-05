@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>New site</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="semi-transparent-bg"></div>
+  @include('partials/header.html')
+  <main>
+
+    <section class="our-team-section main-section">
+
+      <div class="section-inner-wrap">
+        <img class='quarter-top-right-bg' src="./img/quarter-right-top-bg-img.png" alt="">
+      <div class="section-inner">
+        <div class="breadcrumbs">
+          <ul class='breadcrumbs__list'>
+            <li class="breadcrumbs__item">
+              <a class='breadcrumbs__link' href="#">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class='breadcrumbs__link' href="#">Наша команда</a>
+            </li>
+          </ul>
+        </div>
+        <h2 class="section-title">Наша команда</h2>
+
+        <div class="our-team-block">
+          <h3 class="our-team-block__title">
+            Лидеры компании
+          </h3>
+          <span class='our-team-block__subtitle'>Описание к картинке m mauris. Sagittis viverra quis venenatis volutpat
+            vestibulum rhoncus. Описание к картинке m mauris. Sagittis viverra quis venenatis volutpat vestibulum
+            rhoncus. </span>
+
+          <ul class="team-list">
+            <li class="team-card">
+              <span class="team-name">
+                Иван Иванович
+              </span>
+              <span class='team-position'>Должность Sagittis viverra quis venenatis volutpat vestibulum </span>
+              <img src="./img/team-member1.png" alt="">
+
+
+            </li>
+            <li class="team-card">
+              <span class="team-name">
+                Иван Иванович
+              </span>
+              <span class='team-position'>Должность Sagittis viverra quis venenatis volutpat vestibulum </span>
+              <img src="./img/team-member2.png" alt="">
+
+
+            </li>
+            <li class="team-card">
+              <span class="team-name">
+                Иван Иванович
+              </span>
+              <span class='team-position'>Должность Sagittis viverra quis venenatis volutpat vestibulum </span>
+              <img src="./img/team-member3.png" alt="">
+
+
+            </li>
+          </ul>
+
+        </div>
+        <div class="our-team-block regional">
+          <h3 class="our-team-block__title">
+            Региональные менеджеры
+          </h3>
+          <span class='our-team-block__subtitle regional'>Описание к картинке m mauris. Sagittis viverra quis venenatis
+            volutpat vestibulum rhoncus. Описание к картинке m mauris. Sagittis viverra quis venenatis volutpat
+            vestibulum rhoncus. </span>
+
+          <ul class="team-list">
+            <li class="team-card regional">
+
+              <img src="./img/team-member4.png" alt="">
+              <span class="team-name">
+                Иван Иванович
+              </span>
+              <span class='team-position '>Должность Sagittis viverra quis venenatis volutpat vestibulum </span>
+              <a class='contact-link phone' href="tel:+70000000000">+7 000 000 00 00</a>
+              <a class='contact-link email' href="#">youremail@gmail.com</a>
+
+
+            </li>
+            <li class="team-card regional">
+
+              <img src="./img/team-member5.png" alt="">
+              <span class="team-name">
+                Иван Иванович
+              </span>
+              <span class='team-position '>Должность Sagittis viverra quis venenatis volutpat vestibulum </span>
+              <a class='contact-link phone' href="tel:+70000000000">+7 000 000 00 00</a>
+              <a class='contact-link email' href="#">youremail@gmail.com</a>
+
+            </li>
+            <li class="team-card regional">
+
+              <img src="./img/team-member6.png" alt="">
+              <span class="team-name">
+                Иван Иванович
+              </span>
+              <span class='team-position '>Должность Sagittis viverra quis venenatis volutpat vestibulum </span>
+              <a class='contact-link phone' href="tel:+70000000000">+7 000 000 00 00</a>
+              <a class='contact-link email' href="#">youremail@gmail.com</a>
+
+            </li>
+            <li class="team-card regional">
+
+              <img src="./img/team-member7.png" alt="">
+              <span class="team-name">
+                Иван Иванович
+              </span>
+              <span class='team-position regional'>Должность Sagittis viverra quis venenatis volutpat vestibulum </span>
+              <a class='contact-link phone' href="tel:+70000000000">+7 000 000 00 00</a>
+              <a class='contact-link email' href="#">youremail@gmail.com</a>
+
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+    </section>
+
+  </main>
+  @include('partials/footer.html')
+  <!-- @include('html/h1.html') пример инклуда -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

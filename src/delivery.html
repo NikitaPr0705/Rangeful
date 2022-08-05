@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>New site</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div class="semi-transparent-bg"></div>
+  @include('partials/header.html')
+  <main>
+
+    <section class="delivery-section main-section">
+
+      <div class="section-inner-wrap">
+        <img class='quarter-top-right-bg' src="./img/quarter-right-top-bg-img.png" alt="">
+        <img class='quarter-bottom-left-bg' src="./img/quarter-left-bottom-bg-img.png" alt="">
+      <div class="section-inner">
+
+        <div class="breadcrumbs">
+          <ul class='breadcrumbs__list'>
+            <li class="breadcrumbs__item">
+              <a class='breadcrumbs__link' href="#">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class='breadcrumbs__link' href="#">Доставка</a>
+            </li>
+          </ul>
+        </div>
+        <h2 class="section-title">Доставка</h2>
+        <span class="faq-section-subtitle">Мы ценим время наших клиентов
+          и доставляем товары по очень выгодным ценам.</span>
+
+        <ul class="delivery-cards-list">
+          <li class="delivery-card">
+            <img class='delivery-card-map-bg europe' src="./img/map-europe.png" alt="">
+            <h3 class="delivery-card__title">
+              Выгодная доставка
+              по всей Европе
+            </h3>
+            <div class="delivery-card__main-text">
+              <span class='delivery-card__list-title'>Условия доставки:</span>
+              <ul>
+                <li>Подтвердите заказ и реквизиты оплаты у менеджера </li>
+                <li>Оплатите полную стоимость товара</li>
+                <li>Sagittis viverra quis venenatis volutpat vestibulum rhoncum</li>
+                <li>Sagittis viverra quis venenatis volutpat vestibulum rhoncus. </li>
+              </ul>
+
+
+
+
+            </div>
+            <div class="delivery-card__footer">
+              <span class='delivery-timing'>5-10 дней</span>
+              <span class='delivery-price'>Бесплатно!</span>
+            </div>
+          </li>
+          <li class="delivery-card">
+            <img class='delivery-card-map-bg world' src="./img/map-world.png" alt="">
+            <h3 class="delivery-card__title">
+              Доставка
+              по всему миру
+            </h3>
+            <div class="delivery-card__main-text">
+              <span class='delivery-card__list-title'>Условия доставки:</span>
+              <ul>
+                <li>Подтвердите заказ и реквизиты оплаты у менеджера </li>
+                <li>Оплатите полную стоимость товара</li>
+                <li>Sagittis viverra quis venenatis volutpat vestibulum rhoncum</li>
+                <li>Sagittis viverra quis venenatis volutpat vestibulum rhoncus. </li>
+              </ul>
+
+
+
+
+            </div>
+            <div class="delivery-card__footer">
+              <span class='delivery-timing'>5-7 дней</span>
+              <span class='delivery-price'>19,0 €</span>
+            </div>
+          </li>
+          <li class="delivery-card">
+            <img class='delivery-card-map-bg europe' src="./img/map-europe.png" alt="">
+            <h3 class="delivery-card__title">
+              Быстрая доставка
+              по Европе
+            </h3>
+            <div class="delivery-card__main-text">
+              <span class='delivery-card__list-title'>Условия доставки:</span>
+              <ul>
+                <li>Подтвердите заказ и реквизиты оплаты у менеджера </li>
+                <li>Оплатите полную стоимость товара</li>
+                <li>Sagittis viverra quis venenatis volutpat vestibulum rhoncum</li>
+                <li>Sagittis viverra quis venenatis volutpat vestibulum rhoncus. </li>
+              </ul>
+
+
+
+
+            </div>
+            <div class="delivery-card__footer">
+              <span class='delivery-timing'>1-2 дня</span>
+              <span class='delivery-price'>19,0 €</span>
+            </div>
+          </li>
+          <li class="delivery-card">
+            <img class='delivery-card-map-bg world' src="./img/map-world.png" alt="">
+            <h3 class="delivery-card__title">
+              Быстрая доставка
+              по миру
+            </h3>
+            <div class="delivery-card__main-text">
+              <span class='delivery-card__list-title'>Условия доставки:</span>
+              <ul>
+                <li>Подтвердите заказ и реквизиты оплаты у менеджера </li>
+                <li>Оплатите полную стоимость товара</li>
+                <li>Sagittis viverra quis venenatis volutpat vestibulum rhoncum</li>
+                <li>Sagittis viverra quis venenatis volutpat vestibulum rhoncus. </li>
+              </ul>
+
+
+
+
+            </div>
+            <div class="delivery-card__footer">
+              <span class='delivery-timing'>3-7 дней</span>
+              <span class='delivery-price'>39,0 €</span>
+            </div>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+    </section>
+
+
+  </main>
+  @include('partials/footer.html')
+  <!-- @include('html/h1.html') пример инклуда -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

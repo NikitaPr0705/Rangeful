@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>New site</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="semi-transparent-bg"></div>
+  @include('partials/header.html')
+  <main>
+
+    <section class="contacts-section main-section ">
+
+      <div class="section-inner-wrap">
+        <img class='quarter-top-right-bg' src="./img/quarter-right-top-bg-img.png" alt="">
+      <div class="section-inner">
+        <div class="breadcrumbs">
+          <ul class='breadcrumbs__list'>
+            <li class="breadcrumbs__item">
+              <a class='breadcrumbs__link' href="#">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class='breadcrumbs__link' href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <h2 class="section-title">Контакты</h2>
+
+
+        <div class="contacts-wrapper">
+          <div class="contacts-card">
+            <span class="contacts-title">
+              Наш офис:
+            </span>
+            <a class='contact-link phone' href="tel:+70000000000">+7 000 000 00 00</a>
+            <a class='contact-link email' href="#">youremail@gmail.com</a>
+            <span class='contact-link map'>г. Москва, ул. Советская 217</span>
+
+          </div>
+          <div class="contacts-card">
+            <span class="contacts-title">
+              Техподдержка:
+            </span>
+            <a class='contact-link phone' href="tel:+70000000000">+7 000 000 00 00</a>
+            <a class='contact-link email' href="#">youremail@gmail.com</a>
+
+
+          </div>
+          <div class="contacts-card">
+            <span class="contacts-title">
+              График работы:
+            </span>
+            <span class='schedule-text'>с понедельника по пятницу</span>
+            <span class='schedule-text'>с 9:00 до 17:00</span>
+
+
+          </div>
+        </div>
+
+      </div>
+      </div>
+    </section>
+    <section class="contact-map-section">
+      <!-- <img class='delivery-bg' src="./img/delivery-details-bg.png" alt=""> -->
+      <div class="section-inner">
+        <img class="contact-map-img" src="./img/location-big.svg" alt="">
+        <img class="contact-map-img--mob" src="./img/location-big-mob.svg" alt="">
+        <!-- <div class="wrapper mob-col"> -->
+          <div class='text-wrapper'>
+            <span class="title">Как нас найти: </span>
+            <span class='contact-link map'>г. Москва, ул. Советская 217</span>
+          </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2344.770000837536!2d37.92514301580495!3d54.006857932731386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41341f37ff5167c9%3A0x8d7c4aa2b1bc8610!2z0YPQuy4g0KHQvtCy0LXRgtGB0LrQsNGPLCAyMTcsINCU0LXQtNC40LvQvtCy0L4sINCi0YPQu9GM0YHQutCw0Y8g0L7QsdC7Liwg0KDQvtGB0YHQuNGPLCAzMDEyNzA!5e0!3m2!1sru!2sua!4v1624901502341!5m2!1sru!2sua"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <!-- </div> -->
+      </div>
+    </section>
+    <section class="contacts-section main-section form-section contacts-page ">
+      <div class="section-inner">
+        <div class="wrapper flex-sb mob-col">
+          <div class="contact-info">
+            <h3 class="contact-info__title">Мы открыты к общению
+              и готовы ответить на все ваши вопросы</h3>
+            <p class="contact-info__text">
+              Текст основной Lorem ipsum dolor sit amet, consectetur adipiscing elit. In leo in arcu natoque gravida
+              nisi. At libero amet at mi varius gravida massa. Arcu, non diam at vitae id pellentesque mauris. Odio
+              facilisi faucibus iaculis massa enim tincidunt volutpat erat.
+              Suscipit massa dapibus amet, lacus, duis sapien, eleifend vitae. Eu nunc vivamus ac mattis turpis vehicula
+              nulla sit.
+            </p>
+
+            <div class="contacts-card">
+              <span class="contacts-title">
+                Нет времени ждать?
+              </span>
+              <span class="contacts-subtitle">
+                Свяжитесь с нами прямо сейчас!
+              </span>
+              <a class='contact-link phone' href="tel:+70000000000">+7 000 000 00 00</a>
+              <a class='contact-link email' href="#">youremail@gmail.com</a>
+
+            </div>
+          </div>
+
+          <div class="form-block">
+            <form action="#" class="form">
+              <div class="form-title">
+                <span>Заказать обратный звонок</span>
+              </div>
+              <div class="inputs-wrapper">
+                <div class="input-wrapper">
+                  <label for="form-name">Ваше имя </label>
+                  <input type="text" placeholder="Иван" id='form-name'>
+                </div>
+                <div class="inputs-row-wrapper">
+                  <div class="input-wrapper">
+                    <label for="form-email">Ваш Email </label>
+                    <input type="email" placeholder='youremail@gmail.com' id="form-email">
+                  </div>
+                  <div class="input-wrapper">
+                    <label for='form-phone'>Ваш номер телефона </label>
+                    <input type="phone" placeholder='+7 000 00 00 0000' id="form-phone">
+                  </div>
+                </div>
+                <div class="input-wrapper">
+                  <label for='form-textarea'>Ваш вопрос</label>
+                  <textarea placeholder='Введите текст сообщения' id='form-textarea'></textarea>
+                </div>
+              </div>
+              <div class="form-footer">
+                <div class="safety-guarantee">
+                  <img class="safety-icon" src="./img/safety.svg" alt="">
+                  <span class='safety-text'> Мы гарантируем безопасность и сохранность ваших данных</span>
+                </div>
+                <button class="btn bg-brand1">Отправить</button>
+              </div>
+              <span class='form-agreement-text'>
+                Нажимая “Отправить”, я соглашаюсь на обработку персональных данных в соответствии с <a href="#">политикой конфиденциальности</a>  и <a href="#">пользовательским соглашением</a>
+              </span>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  @include('partials/footer.html')
+  <!-- @include('html/h1.html') пример инклуда -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

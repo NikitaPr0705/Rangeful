@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>New site</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="semi-transparent-bg"></div>
+  @include('partials/header.html')
+  <main>
+
+    <section class="reg-completed-section main-section">
+      <div class="section-inner">
+
+        <div class="breadcrumbs">
+          <ul class='breadcrumbs__list'>
+            <li class="breadcrumbs__item">
+              <a class='breadcrumbs__link' href="#">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class='breadcrumbs__link' href="#">Регистрация</a>
+            </li>
+
+
+          </ul>
+        </div>
+
+
+        <div class="wrapper col reg-completed-block">
+          <span class="reg-completed-text">Спасибо, что выбрали нас! </span>
+          <a href="#" class="btn bg-white-brand2">На главную</a>
+          <a href="#" class="btn bg-brand1">Перейти в личный кабинет</a>
+          <div class="contacts-card">
+            <span class="contacts-title">
+              Возникли вопросы?
+            </span>
+            <span class="contacts-subtitle">
+              Мы всегда на связи!
+            </span>
+            <a class='contact-link phone' href="tel:+70000000000">+7 000 000 00 00</a>
+            <a class='contact-link email' href="#">youremail@gmail.com</a>
+            <span class='contact-link map'>г. Москва, ул. Советская 217</span>
+
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+  @include('partials/footer.html')
+  <!-- @include('html/h1.html') пример инклуда -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

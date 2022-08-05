@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#111111" />
+    <title>New site</title>
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/vendor.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <div class="semi-transparent-bg"></div>
+    @include('partials/header.html')
+    <main>
+      <section class="basket-section main-section">
+        <div class="section-inner">
+          <div class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="#">Главная</a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="#">Корзина</a>
+              </li>
+            </ul>
+          </div>
+          <h2 class="section-title">Корзина</h2>
+          <div class="basket-table table">
+            <div class="basket-titles tables-list">
+              <span class="basket-title tables-title">Товар</span>
+              <span class="basket-title tables-title">Цена</span>
+              <span class="basket-title tables-title">Количество</span>
+              <span class="basket-title tables-title">Всего </span>
+            </div>
+            <div class="table-rows">
+              <div class="table-row">
+                <div class="table-item">
+                  <img class="table-img" src="./img/basket-1.png" alt="" />
+                  <div class="wrapper basket-item-info">
+                    <div class="table-link-wrapper">
+                      <a class="table-link" class="" href="#"
+                        >GSM REPEATER 900 + 800 MHz (Voice + 4G / LTE internet)
+                      </a>
+                    </div>
+                    <div class="table-text-wrapper price">
+                      <span class="table-text price">389,0 €</span>
+                    </div>
+                    <div class="counter-block-wrapper">
+                      <span class="basket-title tables-title">Количество</span>
+                      <div class="counter-block">
+                        <img
+                          class="counter-block-img"
+                          src="./img/minus-grey.svg"
+                          alt=""
+                        />
+                        <span class="counter">1</span>
+
+                        <img
+                          class="counter-block-img"
+                          src="./img/plus-grey.svg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <div class="table-text-wrapper total-price">
+                      <span class="table-text total-price">389,0 €</span>
+                    </div>
+                  </div>
+                  <a href="#" class="close-link">
+                    <img src="./img/close.svg" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="table-row">
+                <div class="table-item">
+                  <img class="table-img" src="./img/basket-1.png" alt="" />
+                  <div class="wrapper basket-item-info">
+                    <div class="table-link-wrapper">
+                      <a class="table-link" class="" href="#"
+                        >GSM REPEATER 900 + 800 MHz (Voice + 4G / LTE internet)
+                      </a>
+                    </div>
+                    <div class="table-text-wrapper price">
+                      <span class="table-text price">389,0 €</span>
+                    </div>
+                    <div class="counter-block-wrapper">
+                      <span class="basket-title tables-title">Количество</span>
+                      <div class="counter-block">
+                        <img
+                          class="counter-block-img"
+                          src="./img/minus-grey.svg"
+                          alt=""
+                        />
+                        <span class="counter">1</span>
+
+                        <img
+                          class="counter-block-img"
+                          src="./img/plus-grey.svg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <div class="table-text-wrapper total-price">
+                      <span class="table-text total-price">389,0 €</span>
+                    </div>
+                  </div>
+                  <a href="#" class="close-link">
+                    <img src="./img/close.svg" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="table-row">
+                <div class="table-item">
+                  <img class="table-img" src="./img/basket-1.png" alt="" />
+                  <div class="wrapper basket-item-info">
+                    <div class="table-link-wrapper">
+                      <a class="table-link" class="" href="#"
+                        >GSM REPEATER 900 + 800 MHz (Voice + 4G / LTE internet)
+                      </a>
+                    </div>
+                    <div class="table-text-wrapper price">
+                      <span class="table-text price">389,0 €</span>
+                    </div>
+                    <div class="counter-block-wrapper">
+                      <span class="basket-title tables-title">Количество</span>
+                      <div class="counter-block">
+                        <img
+                          class="counter-block-img"
+                          src="./img/minus-grey.svg"
+                          alt=""
+                        />
+                        <span class="counter">1</span>
+
+                        <img
+                          class="counter-block-img"
+                          src="./img/plus-grey.svg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <div class="table-text-wrapper total-price">
+                      <span class="table-text total-price">389,0 €</span>
+                    </div>
+                  </div>
+                  <a href="#" class="close-link">
+                    <img src="./img/close.svg" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wrapper basket-buttons">
+            <form action="#" class="form">
+              <input type="text" placeholder="Код купона" id="form-coupon" />
+              <a class="btn bg-white-brand2">Применить купон</a>
+            </form>
+            <div class="buttons-wrapper">
+              <a href="#" class="clear-basket">Очистить корзину</a>
+              <a href="#" class="btn bg-white-brand2 continue-buy"
+                >Продолжить покупки</a
+              >
+              <a href="#" class="btn bg-brand2 update-basket"
+                >Обновить корзину</a
+              >
+            </div>
+          </div>
+          <div class="card">
+            <div class="row">
+              <span class="text">Сумма заказа</span>
+              <span class="text">1167,0 €</span>
+            </div>
+            <div class="row">
+              <span class="text">Скидка по купону</span>
+              <span class="text">0,0 €</span>
+            </div>
+            <div class="row">
+              <span class="text strong">К оплате</span>
+              <span class="text strong">1167,0 €</span>
+            </div>
+            <div class="btn bg-brand1">Оформить заказ</div>
+          </div>
+        </div>
+      </section>
+    </main>
+    @include('partials/footer.html')
+    <!-- @include('html/h1.html') пример инклуда -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
+
+<!--
+<div class="slider-card card">
+  <span class='discount-percent'>-20%</span>
+  <picture>
+    <img src="./img/main-slider-img1.png" alt="">
+  </picture>
+  <div class="card-header">
+    <div class="header-info">
+      <span class="vendor-code">Арт: 01010101</span>
+    </div>
+  </div>
+  <div class='card-text'>
+    <a href='#'>
+      GSM REPEATER 900 + 800 MHz (Voice + 4G / LTE internet)
+      - 300 m2
+    </a>
+  </div>
+  <div class="availability">
+    <span class='text'>В наличии</span>
+    <div class="price">
+      389,0 €
+
+    </div>
+    <span class='discount-price'>
+      389,0 €
+    </span>
+  </div>
+  <div class='read-more'>
+    <div class="read-more__link"><a href="#">Подробнее</a>
+    </div>
+    <svg width="42" height="12" viewBox="0 0 42 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1.25 5.99992L41.25 5.99992" stroke="#0B1F35" stroke-linecap="round" />
+      <path d="M36.25 11L41.25 6L36.25 1" stroke="#0B1F35" stroke-linecap="round" />
+    </svg>
+
+  </div>
+</div> -->

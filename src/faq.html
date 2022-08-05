@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>New site</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="semi-transparent-bg"></div>
+  @include('partials/header.html')
+  <main class="faq-page-bg">
+
+    <section class="faq-section main-section">
+      <img class='main-logo-bg' src="./img/main-logo-bg.png" alt="">
+      <div class="section-inner">
+
+        <div class="breadcrumbs">
+          <ul class='breadcrumbs__list'>
+            <li class="breadcrumbs__item">
+              <a class='breadcrumbs__link' href="#">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class='breadcrumbs__link' href="#">FAQ</a>
+            </li>
+          </ul>
+        </div>
+        <h2 class="section-title">FAQ</h2>
+        <span class="faq-section-subtitle">Ответы на часто задаваемые вопросы.</span>
+
+        <nav class="accordion arrows">
+          <!-- <header class="box">
+            <label for="acc-close" class="box-title">Accordion menu</label>
+          </header> -->
+          <input type="radio" name="accordion" id="cb1" />
+          <section class="box">
+            <label class="box-title" for="cb1">Какие стандарты сотовой связи</label>
+            <label class="box-close" for="acc-close"></label>
+            <div class="box-content">
+
+              В статус баре телефонов имеет обозначение «Е» или «2G»
+              2G работает в 2-х диапазонах частот – 900 МГц (Band 8) и 1800 МГц (Band 3). Эти поколения стандартов сотовой связи смело можно назвать базовыми. Они не теряют своей актуальности с момента ввода в эксплуатацию в начале 90-х годов.
+              В настоящее время их главным преимуществом является наибольшая зона охвата территорий. Поэтому, несмотря на прошедшие 30 лет, никто из производителей мобильных устройств не собирается отказываться от их поддержки.
+              Помимо голосовой связи GSM-900 и DCS-1800, к этому поколению обычно относят стандарты мобильного интернета GPRS и EDGE (поколение 2.5G).</div>
+          </section>
+          <input type="radio" name="accordion" id="cb2" />
+          <section class="box">
+            <label class="box-title" for="cb2">Какие стандарты сотовой связи</label>
+            <label class="box-close" for="acc-close"></label>
+            <div class="box-content">
+
+              В статус баре телефонов имеет обозначение «Е» или «2G»
+              2G работает в 2-х диапазонах частот – 900 МГц (Band 8) и 1800 МГц (Band 3). Эти поколения стандартов сотовой связи смело можно назвать базовыми. Они не теряют своей актуальности с момента ввода в эксплуатацию в начале 90-х годов.
+              В настоящее время их главным преимуществом является наибольшая зона охвата территорий. Поэтому, несмотря на прошедшие 30 лет, никто из производителей мобильных устройств не собирается отказываться от их поддержки.
+              Помимо голосовой связи GSM-900 и DCS-1800, к этому поколению обычно относят стандарты мобильного интернета GPRS и EDGE (поколение 2.5G).</div>
+          </section>
+          <input type="radio" name="accordion" id="cb3" />
+          <section class="box">
+            <label class="box-title" for="cb3">Какие стандарты сотовой связи</label>
+            <label class="box-close" for="acc-close"></label>
+            <div class="box-content">
+
+              В статус баре телефонов имеет обозначение «Е» или «2G»
+              2G работает в 2-х диапазонах частот – 900 МГц (Band 8) и 1800 МГц (Band 3). Эти поколения стандартов сотовой связи смело можно назвать базовыми. Они не теряют своей актуальности с момента ввода в эксплуатацию в начале 90-х годов.
+              В настоящее время их главным преимуществом является наибольшая зона охвата территорий. Поэтому, несмотря на прошедшие 30 лет, никто из производителей мобильных устройств не собирается отказываться от их поддержки.
+              Помимо голосовой связи GSM-900 и DCS-1800, к этому поколению обычно относят стандарты мобильного интернета GPRS и EDGE (поколение 2.5G).</div>
+          </section>
+          <input type="radio" name="accordion" id="cb4" />
+          <section class="box">
+            <label class="box-title" for="cb4">Как усилить сигнал для телефонов и мобильного Интернета. В качестве заключения хочу сказать, что в большинстве случаев проблемы слабого сотового сигнала</label>
+            <label class="box-close" for="acc-close"></label>
+            <div class="box-content">
+
+              В статус баре телефонов имеет обозначение «Е» или «2G»
+              2G работает в 2-х диапазонах частот – 900 МГц (Band 8) и 1800 МГц (Band 3). Эти поколения стандартов сотовой связи смело можно назвать базовыми. Они не теряют своей актуальности с момента ввода в эксплуатацию в начале 90-х годов.
+              В настоящее время их главным преимуществом является наибольшая зона охвата территорий. Поэтому, несмотря на прошедшие 30 лет, никто из производителей мобильных устройств не собирается отказываться от их поддержки.
+              Помимо голосовой связи GSM-900 и DCS-1800, к этому поколению обычно относят стандарты мобильного интернета GPRS и EDGE (поколение 2.5G).</div>
+          </section>
+          <input type="radio" name="accordion" id="cb5" />
+          <section class="box">
+            <label class="box-title" for="cb5">Какие стандарты сотовой связи</label>
+            <label class="box-close" for="acc-close"></label>
+            <div class="box-content">
+
+              В статус баре телефонов имеет обозначение «Е» или «2G»
+              2G работает в 2-х диапазонах частот – 900 МГц (Band 8) и 1800 МГц (Band 3). Эти поколения стандартов сотовой связи смело можно назвать базовыми. Они не теряют своей актуальности с момента ввода в эксплуатацию в начале 90-х годов.
+              В настоящее время их главным преимуществом является наибольшая зона охвата территорий. Поэтому, несмотря на прошедшие 30 лет, никто из производителей мобильных устройств не собирается отказываться от их поддержки.
+              Помимо голосовой связи GSM-900 и DCS-1800, к этому поколению обычно относят стандарты мобильного интернета GPRS и EDGE (поколение 2.5G).</div>
+          </section>
+          <input type="radio" name="accordion" id="cb6" />
+          <section class="box">
+            <label class="box-title" for="cb6">Какие стандарты сотовой связи</label>
+            <label class="box-close" for="acc-close"></label>
+            <div class="box-content">
+
+              В статус баре телефонов имеет обозначение «Е» или «2G»
+              2G работает в 2-х диапазонах частот – 900 МГц (Band 8) и 1800 МГц (Band 3). Эти поколения стандартов сотовой связи смело можно назвать базовыми. Они не теряют своей актуальности с момента ввода в эксплуатацию в начале 90-х годов.
+              В настоящее время их главным преимуществом является наибольшая зона охвата территорий. Поэтому, несмотря на прошедшие 30 лет, никто из производителей мобильных устройств не собирается отказываться от их поддержки.
+              Помимо голосовой связи GSM-900 и DCS-1800, к этому поколению обычно относят стандарты мобильного интернета GPRS и EDGE (поколение 2.5G).</div>
+          </section>
+
+
+          <input type="radio" name="accordion" id="acc-close" />
+        </nav>
+
+      </div>
+    </section>
+
+    <section class="contacts-section main-section form-section faq-page">
+      <div class="section-inner">
+        <div class="wrapper flex-sb mob-col">
+          <div class="contact-info">
+            <h3 class="contact-info__title">Мы открыты к общению
+              и готовы ответить на все ваши вопросы</h3>
+            <p class="contact-info__text">
+              Текст основной Lorem ipsum dolor sit amet, consectetur adipiscing elit. In leo in arcu natoque gravida
+              nisi. At libero amet at mi varius gravida massa. Arcu, non diam at vitae id pellentesque mauris. Odio
+              facilisi faucibus iaculis massa enim tincidunt volutpat erat.
+              Suscipit massa dapibus amet, lacus, duis sapien, eleifend vitae. Eu nunc vivamus ac mattis turpis vehicula
+              nulla sit.
+            </p>
+
+            <div class="contacts-card">
+              <span class="contacts-title">
+                Нет времени ждать?
+              </span>
+              <span class="contacts-subtitle">
+                Свяжитесь с нами прямо сейчас!
+              </span>
+              <a class='contact-link phone' href="tel:+70000000000">+7 000 000 00 00</a>
+              <a class='contact-link email' href="#">youremail@gmail.com</a>
+
+            </div>
+          </div>
+
+          <div class="form-block">
+            <form action="" class="form">
+              <div class="form-title">
+                <span>Заказать обратный звонок</span>
+              </div>
+              <div class="inputs-wrapper">
+                <div class="input-wrapper">
+                  <label for="form-name">Ваше имя </label>
+                  <input type="text" placeholder="Иван" id='form-name'>
+                </div>
+                <div class="inputs-row-wrapper">
+                  <div class="input-wrapper">
+                    <label for="form-email">Ваш Email </label>
+                    <input type="email" placeholder='youremail@gmail.com' id="form-email">
+                  </div>
+                  <div class="input-wrapper">
+                    <label for='form-phone'>Ваш номер телефона </label>
+                    <input type="phone" placeholder='+7 000 00 00 0000' id="form-phone">
+                  </div>
+                </div>
+                <div class="input-wrapper">
+                  <label for='form-textarea'>Ваш вопрос</label>
+                  <textarea placeholder='Введите текст сообщения' id='form-textarea'></textarea>
+                </div>
+              </div>
+              <div class="form-footer">
+                <div class="safety-guarantee">
+                  <img class="safety-icon" src="./img/safety.svg" alt="">
+                  <span class='safety-text'> Мы гарантируем безопасность и сохранность ваших данных</span>
+                </div>
+                <button class="btn bg-brand1">Отправить</button>
+              </div>
+              <span class='form-agreement-text'>
+                Нажимая “Отправить”, я соглашаюсь на обработку персональных данных в соответствии с <a
+                  href="#">политикой конфиденциальности</a> и <a href="#">пользовательским соглашением</a>
+              </span>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  @include('partials/footer.html')
+  <!-- @include('html/h1.html') пример инклуда -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

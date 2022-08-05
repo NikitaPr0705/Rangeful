@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>New site</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="semi-transparent-bg"></div>
+  @include('partials/header.html')
+  <main>
+
+    <section class="categories-section main-section">
+
+      <div class="categories-wrapper-main">
+        <img class='quarter-top-right-bg' src="./img/quarter-right-top-bg-img.png" alt="">
+      <aside class="aside-block">
+        <h3 class="block-title">
+          Католог продукции
+        </h3>
+
+        <ul class="block-list">
+          <li class="block-list__item">
+
+            <a href="#" class="block-list__link">Популярные товары</a>
+          </li>
+          <li class="block-list__item sale">
+            <span class='block-list__item-text'>sale</span>
+            <a href="#" class="block-list__link">Товары со скидкой</a>
+          </li>
+          <li>
+            <nav class="accordion arrows">
+              <!-- <header class="box">
+                <label for="acc-close" class="box-title">Accordion menu</label>
+              </header> -->
+              <input type="radio" name="accordion" id="cb1" />
+              <section class="box">
+                <label class="box-title" for="cb1">GSM repeaters
+                  (voice + 4G LTE Internet)</label>
+                <label class="box-close" for="acc-close"></label>
+                <div class="box-content">
+                  <a href="#">GSM repeaters (voice + 4G LTE Internet)</a>
+                  <a href="#">GSM repeaters (voice + 4G LTE Internet)</a>
+                  <a href="#">GSM repeaters (voice + 4G LTE Internet)</a>
+                  <a href="#">GSM repeaters (voice + 4G LTE Internet)</a>
+                </div>
+              </section>
+              <input type="radio" name="accordion" id="cb2" />
+              <section class="box">
+                <label class="box-title" for="cb2">GSM repeaters
+                  (voice + 4G LTE Internet)</label>
+                <label class="box-close" for="acc-close"></label>
+                <div class="box-content">
+                  <a href="#">GSM repeaters (voice + 4G LTE Internet)</a>
+                  <a href="#">GSM repeaters (voice + 4G LTE Internet)</a>
+                  <a href="#">GSM repeaters (voice + 4G LTE Internet)</a>
+                  <a href="#">GSM repeaters (voice + 4G LTE Internet)</a>
+                </div>
+              </section>
+              <input type="radio" name="accordion" id="cb3" />
+              <section class="box">
+                <label class="box-title" for="cb3">GSM repeaters (voice)</label>
+                <label class="box-close" for="acc-close"></label>
+                <div class="box-content">
+                  <a href="#">GSM repeaters (voice + 4G LTE Internet)</a>
+                  <a href="#">GSM repeaters (voice + 4G LTE Internet)</a>
+                  <a href="#">GSM repeaters (voice + 4G LTE Internet)</a>
+                  <a href="#">GSM repeaters (voice + 4G LTE Internet)</a>
+                </div>
+              </section>
+              <input type="radio" name="accordion" id="cb4" />
+              <section class="box">
+                <label class="box-title" for="cb4">GSM repeaters
+                  (voice + 4G LTE Internet)</label>
+                <label class="box-close" for="acc-close"></label>
+                <div class="box-content">
+                  <a href="#">GSM repeaters (voice + 4G LTE Internet)</a>
+                  <a href="#">GSM repeaters (voice + 4G LTE Internet)</a>
+                  <a href="#">GSM repeaters (voice + 4G LTE Internet)</a>
+                  <a href="#">GSM repeaters (voice + 4G LTE Internet)</a>
+                </div>
+              </section>
+              <input type="radio" name="accordion" id="cb5" />
+              <section class="box">
+                <label class="box-title" for="cb5">GSM repeaters (voice)</label>
+                <label class="box-close" for="acc-close"></label>
+                <div class="box-content">
+                  <a href="#">GSM repeaters (voice + 4G LTE Internet)</a>
+                  <a href="#">GSM repeaters (voice + 4G LTE Internet)</a>
+                  <a href="#">GSM repeaters (voice + 4G LTE Internet)</a>
+                  <a href="#">GSM repeaters (voice + 4G LTE Internet)</a>
+                </div>
+              </section>
+              <input type="radio" name="accordion" id="cb6" />
+              <section class="box">
+                <label class="box-title" for="cb6">GSM repeaters (voice)</label>
+                <label class="box-close" for="acc-close"></label>
+                <div class="box-content">
+                  <a href="#">GSM repeaters (voice + 4G LTE Internet)</a>
+                  <a href="#">GSM repeaters (voice + 4G LTE Internet)</a>
+                  <a href="#">GSM repeaters (voice + 4G LTE Internet)</a>
+                  <a href="#">GSM repeaters (voice + 4G LTE Internet)</a>
+                </div>
+              </section>
+
+
+              <input type="radio" name="accordion" id="acc-close" />
+            </nav>
+
+          </li>
+        </ul>
+      </aside>
+      <div class="section-inner">
+        <div class="breadcrumbs">
+          <ul class='breadcrumbs__list'>
+            <li class="breadcrumbs__item">
+              <a class='breadcrumbs__link' href="#">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class='breadcrumbs__link' href="#">GSM REPEATERS (VOICE + 4G LTE INTERNET)</a>
+            </li>
+          </ul>
+        </div>
+        <h2 class="block-title">GSM repeaters (voice + 4G LTE Internet)</h2>
+
+        <form class="categories-sort form">
+          <a href="#block-sort" class="block-sort">
+            <span class='block-sort-text'>Цена</span>
+            <img src="./img/sort-down.svg" alt="">
+          </a>
+          <a href="#block-sort" class="block-sort">
+            <span class='block-sort-text'>Название</span>
+            <img src="./img/sort-up.svg" alt="">
+          </a>
+
+          <a href="#block-sort" class="block-sort">
+            <!-- <span class='block-sort-text square'>Площадь покрытия</span> -->
+            <div class="wrapper col offer-select">
+              <div class='custom-select'>
+                <select name="" id="">
+                  <option value="100">Площадь покрытия</option>
+                  <option value="200">Украина</option>
+                  <option value="300">США</option>
+                  <option value="400">Китай</option>
+                  <option value="400">Афганистан</option>
+                </select>
+              </div>
+            </div>
+            <!-- <img class='area-sort-img' src="./img/arrow-down-black.svg" alt=""> -->
+          </a>
+
+
+        </form>
+
+        <ul class="items-list">
+          <li class="item-card">
+            <div class="card discount-card">
+
+              <div class="main-content">
+
+                <div class="card-header">
+                  <div class='card-text'>
+                    <a href='#'>
+                      GSM REPEATER 900 + 800 MHz (Voice + 4G / LTE internet) - 300 m2
+                    </a>
+                  </div>
+                  <div class="header-info">
+                    <span class="vendor-code">Арт: 01010101</span>
+                  </div>
+                </div>
+                <div class="card-description">
+                  <ul>
+                    <li>Suitable for all European 900 + 800 MHz providers</li>
+                    <li>Compact repeater for use at home and offices</li>
+                    <li>Supplied with antennas, coaxial cables and accessories</li>
+                    <li>Easy to install. Ready for use</li>
+                    <li>Free of interference. </li>
+                  </ul>
+                </div>
+                <div class="availability mobile-shown">
+                  <span class='text'>В наличии</span>
+                  <div class="price">
+                    389,0 €
+                    <span class='discount-price'>
+                      389,0 €
+                    </span>
+                  </div>
+                </div>
+                <div class='order-block'>
+                  <a class='btn bg-brand1' href="#">Добавить в корзину</a>
+                  <a class='btn bg-white-brand2 mobile-hide' href="#">Подробнее</a>
+                  <a href="#" class='compare mobile-shown'><img src="./img/balance.svg" alt=""></a>
+
+                </div>
+              </div>
+              <div class="picture-block">
+                <span class='discount-percent'>-20%</span>
+                <a href="#" class='compare'><img src="./img/balance.svg" alt=""></a>
+                <!-- <div class="card-header"> -->
+                <!-- <div class="header-info"> -->
+
+                <picture>
+                  <img src="./img/card-product-img.png" alt="">
+                </picture>
+                <span class="vendor-code mobile-shown">Арт: 01010101</span>
+
+                <!-- </div> -->
+                <!-- </div> -->
+                <div class="availability">
+                  <span class='text'>В наличии</span>
+                  <div class="price">
+                    389,0 €
+                    <span class='discount-price'>
+                      389,0 €
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+
+
+          </li>
+          <li class="item-card">
+            <div class="card ">
+
+              <div class="main-content">
+
+                <div class="card-header">
+                  <div class='card-text'>
+                    <a href='#'>
+                      GSM REPEATER 900 + 800 MHz (Voice + 4G / LTE internet) - 300 m2
+                    </a>
+                  </div>
+                  <div class="header-info">
+                    <span class="vendor-code">Арт: 01010101</span>
+                  </div>
+                </div>
+                <div class="card-description">
+                  <ul>
+                    <li>Suitable for all European 900 + 800 MHz providers</li>
+                    <li>Compact repeater for use at home and offices</li>
+                    <li>Supplied with antennas, coaxial cables and accessories</li>
+                    <li>Easy to install. Ready for use</li>
+                    <li>Free of interference. </li>
+                  </ul>
+                </div>
+                <div class="availability mobile-shown">
+                  <span class='text'>В наличии</span>
+                  <div class="price">
+                    389,0 €
+                    <span class='discount-price'>
+                      389,0 €
+                    </span>
+                  </div>
+                </div>
+                <div class='order-block'>
+                  <a class='btn bg-brand1' href="#">Добавить в корзину</a>
+                  <a class='btn bg-white-brand2 mobile-hide' href="#">Подробнее</a>
+                  <a href="#" class='compare mobile-shown'><img src="./img/balance.svg" alt=""></a>
+
+                </div>
+              </div>
+              <div class="picture-block">
+                <span class='discount-percent'>-20%</span>
+                <a href="#" class='compare'><img src="./img/balance.svg" alt=""></a>
+                <!-- <div class="card-header"> -->
+                <!-- <div class="header-info"> -->
+
+                <picture>
+                  <img src="./img/card-product-img.png" alt="">
+                </picture>
+                <span class="vendor-code mobile-shown">Арт: 01010101</span>
+
+                <!-- </div> -->
+                <!-- </div> -->
+                <div class="availability">
+                  <span class='text'>В наличии</span>
+                  <div class="price">
+                    389,0 €
+                    <span class='discount-price'>
+                      389,0 €
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </li>
+          <li class="item-card">
+            <div class="card ">
+
+              <div class="main-content">
+
+                <div class="card-header">
+                  <div class='card-text'>
+                    <a href='#'>
+                      GSM REPEATER 900 + 800 MHz (Voice + 4G / LTE internet) - 300 m2
+                    </a>
+                  </div>
+                  <div class="header-info">
+                    <span class="vendor-code">Арт: 01010101</span>
+                  </div>
+                </div>
+                <div class="card-description">
+                  <ul>
+                    <li>Suitable for all European 900 + 800 MHz providers</li>
+                    <li>Compact repeater for use at home and offices</li>
+                    <li>Supplied with antennas, coaxial cables and accessories</li>
+                    <li>Easy to install. Ready for use</li>
+                    <li>Free of interference. </li>
+                  </ul>
+                </div>
+                <div class="availability mobile-shown">
+                  <span class='text'>В наличии</span>
+                  <div class="price">
+                    389,0 €
+                    <span class='discount-price'>
+                      389,0 €
+                    </span>
+                  </div>
+                </div>
+                <div class='order-block'>
+                  <a class='btn bg-brand1' href="#">Добавить в корзину</a>
+                  <a class='btn bg-white-brand2 mobile-hide' href="#">Подробнее</a>
+                  <a href="#" class='compare mobile-shown'><img src="./img/balance.svg" alt=""></a>
+
+                </div>
+              </div>
+              <div class="picture-block">
+                <span class='discount-percent'>-20%</span>
+                <a href="#" class='compare'><img src="./img/balance.svg" alt=""></a>
+                <!-- <div class="card-header"> -->
+                <!-- <div class="header-info"> -->
+
+                <picture>
+                  <img src="./img/card-product-img.png" alt="">
+                </picture>
+                <span class="vendor-code mobile-shown">Арт: 01010101</span>
+
+                <!-- </div> -->
+                <!-- </div> -->
+                <div class="availability">
+                  <span class='text'>В наличии</span>
+                  <div class="price">
+                    389,0 €
+                    <span class='discount-price'>
+                      389,0 €
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </li>
+          <li class="item-card">
+            <div class="card discount-card">
+
+              <div class="main-content">
+
+                <div class="card-header">
+                  <div class='card-text'>
+                    <a href='#'>
+                      GSM REPEATER 900 + 800 MHz (Voice + 4G / LTE internet) - 300 m2
+                    </a>
+                  </div>
+                  <div class="header-info">
+                    <span class="vendor-code">Арт: 01010101</span>
+                  </div>
+                </div>
+                <div class="card-description">
+                  <ul>
+                    <li>Suitable for all European 900 + 800 MHz providers</li>
+                    <li>Compact repeater for use at home and offices</li>
+                    <li>Supplied with antennas, coaxial cables and accessories</li>
+                    <li>Easy to install. Ready for use</li>
+                    <li>Free of interference. </li>
+                  </ul>
+                </div>
+
+                <div class='order-block'>
+                  <a class='btn bg-brand1' href="#">Добавить в корзину</a>
+                  <a class='btn bg-white-brand2 mobile-hide' href="#">Подробнее</a>
+                  <a href="#" class='compare mobile-shown'><img src="./img/balance.svg" alt=""></a>
+
+                </div>
+              </div>
+              <div class="picture-block">
+                <span class='discount-percent'>-20%</span>
+                <a href="#" class='compare'><img src="./img/balance.svg" alt=""></a>
+                <!-- <div class="card-header"> -->
+                <!-- <div class="header-info"> -->
+
+                <picture>
+                  <img src="./img/card-product-img.png" alt="">
+                </picture>
+                <!-- </div> -->
+                <!-- </div> -->
+                <div class="availability">
+                  <span class='text'>В наличии</span>
+                  <div class="price">
+                    389,0 €
+                    <span class='discount-price'>
+                      389,0 €
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+          </li>
+
+        </ul>
+
+
+
+      </div>
+    </div>
+    </section>
+
+  </main>
+  @include('partials/footer.html')
+  <!-- @include('html/h1.html') пример инклуда -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

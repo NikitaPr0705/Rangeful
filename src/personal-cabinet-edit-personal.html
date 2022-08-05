@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>New site</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="semi-transparent-bg"></div>
+  @include('partials/header.html')
+  <main>
+
+    <section class="personal-cabinet-section edit-personal-section main-section">
+
+
+      <div class="section-inner">
+        <div class="breadcrumbs">
+          <ul class='breadcrumbs__list'>
+            <li class="breadcrumbs__item">
+              <a class='breadcrumbs__link' href="#">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class='breadcrumbs__link' href="#">Личный кабинет: Мои заказы</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class='breadcrumbs__link' href="#">Заказ №101</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class='breadcrumbs__link' href="#">Редактирование заказа №104</a>
+            </li>
+
+
+          </ul>
+        </div>
+        <h2 class="section-title">Редактирование заказа №104</h2>
+
+        <div class="wrapper">
+          <form action="" class="form">
+          <div class="edit-info-block">
+
+
+              <div class="form-title">
+                <span>Детали доставки</span>
+              </div>
+              <div class="selects-wrapper form-header-order">
+                <div class="wrapper col">
+                  <span class='select-title'>Выберите вариант доставки *</span>
+                  <div class='custom-select'>
+                    <select name="" id="">
+                      <option value="delivery-var1">Выберите вариант доставки</option>
+                      <option value="delivery-var2">Выберите вариант доставки1</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="inputs-wrapper">
+
+                <div class="inputs-row-wrapper">
+                  <div class="input-wrapper">
+                    <label for="form-name">Ваше имя </label>
+                    <input type="text" placeholder="Иван" id='form-name'>
+                  </div>
+                  <div class="input-wrapper">
+                    <label for="form-name">Ваша фамилия </label>
+                    <input type="text" placeholder="Иванов" id='form-surname'>
+                  </div>
+                  <div class="input-wrapper">
+                    <label for="form-email">Ваш Email </label>
+                    <input type="email" placeholder='youremail@gmail.com' id="form-email">
+                  </div>
+                  <div class="input-wrapper">
+                    <label for='form-phone'>Ваш номер телефона </label>
+                    <input type="phone" placeholder='+7 000 00 00 0000' id="form-phone">
+                  </div>
+                </div>
+                <div class="selects-wrapper">
+                  <div class="wrapper col">
+                    <span class='select-title'>Страна/ регион *</span>
+                    <div class='custom-select w-100'>
+                      <select name="" id="">
+                        <option value="choose-country">Выберите страну/ регион</option>
+                        <option value="country1">Страна1</option>
+                        <option value="country2">Страна2</option>
+                        <option value="country3">Страна3</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="inputs-row-wrapper">
+                  <div class="input-wrapper">
+                    <label for="form-name">Область *</label>
+                    <input type="text" placeholder="Московская" id='form-name'>
+                  </div>
+                  <div class="input-wrapper">
+                    <label for="form-name">Населенный пункт *</label>
+                    <input type="text" placeholder="Москва" id='form-surname'>
+                  </div>
+                  <div class="input-wrapper">
+                    <label for="form-email">Адрес *</label>
+                    <input type="email" placeholder='Номер дома и название улицы' id="form-email">
+                  </div>
+                  <div class="input-wrapper">
+                    <label for='form-phone'>Индекс *</label>
+                    <input type="phone" placeholder='210000' id="form-phone">
+                  </div>
+                </div>
+                <div class="input-wrapper textarea">
+                  <label for='form-textarea'>Примечание к заказу</label>
+                  <textarea placeholder='Не обязательное поле' id='form-textarea'></textarea>
+                </div>
+              </div>
+
+
+          </div>
+          <div class="main-content">
+            <div class="order-card">
+
+              <span class="card-title">Ваш заказ</span>
+              <div class="card-rows">
+                <div class="card-row ">
+                  <div class="card-item">
+                    <div class="item-name-wrapper">
+                      <span class='item-name' href="#">GSM REPEATER 900 + 800 MHz
+                        (Voice + 4G / LTE internet) </span>
+                    </div>
+                    <div class="item-text-wrapper count">
+                      <span class='item-text'>389,0 €</span>
+                      <span class='item-text'>x</span>
+                      <!-- <span class='item-text items-count'>10</span> -->
+                      <div class="input-enter-data">
+                        <input type="text" class='item-text items-count'>
+                      </div>
+                    </div>
+                    <div class="item-text-wrapper total-price">
+                      <span class='item-text total-price'>389,0 €</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-row ">
+                  <div class="card-item">
+                    <div class="item-name-wrapper">
+                      <span class='item-name' class='' href="#">GSM REPEATER 900 + 800 MHz
+                        (Voice + 4G / LTE internet) </span>
+                    </div>
+                    <div class="item-text-wrapper count">
+                      <span class='item-text'>389,0 €</span>
+                      <span class='item-text'>x</span>
+                      <!-- <span class='item-text items-count'>1</span> -->
+                      <div class="input-enter-data">
+                        <input type="text" class='item-text items-count'>
+                      </div>
+                    </div>
+                    <div class="item-text-wrapper total-price">
+                      <span class='item-text total-price'>389,0 €</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="total-block">
+                <div class="row">
+                  <span class='text'>Сумма заказа</span>
+                  <span class='text'>4279,0 €</span>
+                </div>
+                <div class="row">
+                  <span class='text'>Скидка по купону</span>
+                  <span class='text'>0,0 €</span>
+                </div>
+                <div class="row">
+                  <span class='text strong'>К оплате</span>
+                  <span class='text strong'>4279,0 €</span>
+                </div>
+              </div>
+              <div>
+                <label class='check option'>
+                  <input class='check__input' type="checkbox" name="checkbox">
+                  <span class='check__box'>
+                    <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 5L4 8L11 1" stroke="#0B1F35" stroke-linecap="round"/>
+                      </svg>
+                  </span>
+                  Я согласен(а) на обработку персональных данных в соответствии с <a href="#">Политикой
+                    конфиденциальности</a> и <a href="#">Пользовательским
+                    соглашением</a>
+                </label>
+                <label class='check option'>
+                  <input class='check__input' type="checkbox" name="checkbox">
+                  <span class='check__box'>
+                    <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 5L4 8L11 1" stroke="#0B1F35" stroke-linecap="round"/>
+                      </svg>
+                  </span>
+                  Я согласен(а) с <a href="#">Договором оферты</a> </a>
+                </label>
+              </div>
+              <a href="#" class="btn bg-brand1">Подтвердить заказ </a>
+            </div>
+          </div>
+        </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  @include('partials/footer.html')
+  <!-- @include('html/h1.html') пример инклуда -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

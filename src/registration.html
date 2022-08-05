@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>New site</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="semi-transparent-bg"></div>
+  @include('partials/header.html')
+  <main>
+
+    <section class="registration-section show-order-section main-section">
+      <img class='quarter-top-right-bg' src="./img/quarter-right-top-bg-img.png" alt="">
+      <img class='quarter-bottom-left-bg' src="./img/quarter-left-bottom-bg-img.png" alt="">
+      <div class="section-inner">
+
+        <div class="breadcrumbs">
+          <ul class='breadcrumbs__list'>
+            <li class="breadcrumbs__item">
+              <a class='breadcrumbs__link' href="#">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class='breadcrumbs__link' href="#">Регистрация аккаунта</a>
+            </li>
+
+          </ul>
+        </div>
+        <h2 class="section-title">Регистрация аккаунта</h2>
+
+        <div class="wrapper col">
+          <form action="" class="form">
+            <div class="inputs-wrapper">
+
+              <div class="inputs-row-wrapper">
+                <div class="input-wrapper">
+                  <label for="form-name">Ваше имя </label>
+                  <input type="text" placeholder="Иван" id='form-name'>
+                </div>
+                <div class="input-wrapper">
+                  <label for="form-name">Ваша фамилия </label>
+                  <input type="text" placeholder="Иванов" id='form-surname'>
+                </div>
+                <div class="input-wrapper">
+                  <label for="form-email">Ваш Email </label>
+                  <input type="email" placeholder='youremail@gmail.com' id="form-email">
+                </div>
+                <div class="input-wrapper">
+                  <label for='form-phone'>Ваш номер телефона </label>
+                  <input type="phone" placeholder='+7 000 00 00 0000' id="form-phone">
+                </div>
+              </div>
+              <div class="selects-wrapper">
+                <div class="wrapper col">
+                  <span class='select-title'>Страна/ регион *</span>
+                  <div class='custom-select'>
+                    <select name="" id="">
+                      <option value="choose-country">Выберите страну/ регион</option>
+                      <option value="country1">Страна1</option>
+                      <option value="country2">Страна2</option>
+                      <option value="country3">Страна3</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="inputs-row-wrapper">
+                <div class="input-wrapper">
+                  <label for="form-name">Область *</label>
+                  <input type="text" placeholder="Московская" id='form-name'>
+                </div>
+                <div class="input-wrapper">
+                  <label for="form-name">Населенный пункт *</label>
+                  <input type="text" placeholder="Москва" id='form-surname'>
+                </div>
+                <div class="input-wrapper">
+                  <label for="form-email">Адрес *</label>
+                  <input type="email" placeholder='Номер дома и название улицы' id="form-email">
+                </div>
+                <div class="input-wrapper">
+                  <label for='form-phone'>Индекс *</label>
+                  <input type="phone" placeholder='210000' id="form-phone">
+                </div>
+              </div>
+              <div class="inputs-row-wrapper ">
+                <div class="input-wrapper password-input">
+                  <label for="password-input">Ваш пароль * </label>
+                  <input type="password" id="password-input" placeholder="Введите пароль" name="password">
+                  <img class='password-eye' src="./img/eye.svg" alt="">
+
+                </div>
+                <div class="input-wrapper password-input">
+                  <label for="password-repeat-input">Повторите ваш пароль * </label>
+                  <input type="password" id="password-repeat-input" placeholder="Введите пароль" name="password">
+                  <img class='password-eye' src="./img/eye.svg" alt="">
+                </div>
+
+              </div>
+              <div>
+                <label class='check option'>
+                  <input class='check__input' type="checkbox" name="checkbox">
+                  <span class='check__box'>
+                    <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 5L4 8L11 1" stroke="#0B1F35" stroke-linecap="round"/>
+                      </svg>
+                  </span>
+                  Я согласен(а) на обработку персональных данных в соответствии с <a href="#">Политикой
+                    конфиденциальности</a> и <a href="#">Пользовательским
+                    соглашением</a>
+                </label>
+                <label class='check option'>
+                  <input class='check__input' type="checkbox" name="checkbox">
+                  <span class='check__box'>
+                    <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 5L4 8L11 1" stroke="#0B1F35" stroke-linecap="round"/>
+                      </svg>
+                  </span>
+                  Я согласен(а) с <a href="#">Договором оферты</a> </a>
+                </label>
+              </div>
+              <button class="btn bg-brand1">Зарегистрироваться</button>
+            </div>
+          </form>
+          <div class="acc-login-block">
+            <span class='acc-login-text'>У Вас уже есть аккаунт ?</span>
+            <a class="btn bg-white-brand2">Войти в аккаунт</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  @include('partials/footer.html')
+  <!-- @include('html/h1.html') пример инклуда -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

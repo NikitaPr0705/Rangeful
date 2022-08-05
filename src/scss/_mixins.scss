@@ -1,0 +1,167 @@
+@import "./mixins/breakpoint";
+@import "./mixins/burger";
+@import "./mixins/checkbox";
+@import "./mixins/font-face";
+@import "./mixins/mini";
+@import "_vars";
+
+@mixin main-btn {
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  overflow-wrap: break-word;
+  @include fluidFontSize(9px, 16px, 768px, 1920px, 18px);
+  @include fluidLineHeight(12px, 19px, 768px, 1920px, 18px);
+  letter-spacing: 1px;
+  cursor: pointer;
+  width: 100%;
+  text-transform: uppercase;
+  //padding-top: 1.2em; // чтобы менялось пропорционально относительно шрифта
+  //padding-bottom: 1.2em; // чтобы менялось пропорционально относительно шрифта
+  transition: $transition;
+  border-radius: $border-radius;
+  color: $color-intro;
+  padding: 1em 3.3em;
+}
+
+@function strip-unit($number) {
+  @if type-of($number) == "number" and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+
+  @return $number;
+}
+
+@function calcFluidFontSize($f-min, $f-max, $w-min, $w-max, $units: px) {
+  $f-min: strip-unit($f-min);
+  $f-max: strip-unit($f-max);
+  $w-min: strip-unit($w-min);
+  $w-max: strip-unit($w-max);
+
+  $k: ($f-max - $f-min)/ ($w-max - $w-min);
+  $b: $f-min - $k * $w-min;
+
+  $b: $b + $units;
+
+  @return calc(#{$k} * 100vw + #{$b});
+}
+
+@mixin fluidFontSize($f-min, $f-max, $w-min, $w-max, $fallback: false) {
+  font-size: $f-min;
+
+  @media (min-width: $w-min) {
+    @if ($fallback) {
+      font-size: $fallback;
+    }
+    font-size: calcFluidFontSize($f-min, $f-max, $w-min, $w-max, px);
+  }
+  @media (min-width: $w-max) {
+    font-size: $f-max;
+  }
+}
+
+@function strip-unit($number) {
+  @if type-of($number) == "number" and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+
+  @return $number;
+}
+
+@function calcFluidLineHeight($f-min, $f-max, $w-min, $w-max, $units: px) {
+  $f-min: strip-unit($f-min);
+  $f-max: strip-unit($f-max);
+  $w-min: strip-unit($w-min);
+  $w-max: strip-unit($w-max);
+
+  $k: ($f-max - $f-min)/ ($w-max - $w-min);
+  $b: $f-min - $k * $w-min;
+
+  $b: $b + $units;
+
+  @return calc(#{$k} * 100vw + #{$b});
+}
+
+@mixin fluidLineHeight($f-min, $f-max, $w-min, $w-max, $fallback: false) {
+  line-height: $f-min;
+
+  @media (min-width: $w-min) {
+    @if ($fallback) {
+      line-height: $fallback;
+    }
+    line-height: calcFluidLineHeight($f-min, $f-max, $w-min, $w-max, px);
+  }
+  @media (min-width: $w-max) {
+    line-height: $f-max;
+  }
+}
+
+.fluid-font-size {
+  @include fluidFontSize(24px, 36px, 320px, 1440px, 18px);
+}
+
+.fluid-line-height {
+  @include fluidLineHeight(35px, 52px, 320px, 1440px, 18px);
+}
+
+// === Mixins ===
+@mixin font-main-light {
+  font-weight: 300;
+}
+
+@mixin font-main-regular {
+  font-weight: 400;
+}
+
+@mixin font-main-medium {
+  font-weight: 500;
+}
+
+@mixin font-main-bold {
+  font-weight: bold;
+}
+
+// центрирование аналог margin: 0 auto;
+@mixin push--auto {
+  margin: {
+    left: auto;
+    right: auto;
+  }
+}
+// for pseudo
+@mixin pseudo($display: block, $pos: absolute, $content: "") {
+  content: $content;
+  display: $display;
+  position: $pos;
+}
+
+@mixin responsive-ratio($x, $y, $pseudo: false) {
+  $padding: unquote(($y / $x) * 100 + "%");
+  @if $pseudo {
+    &:before {
+      @include pseudo($pos: relative);
+      width: 100%;
+      padding-top: $padding;
+    }
+  } @else {
+    padding-top: $padding;
+  }
+}
+// Например, вы можете написать код ниже и ваш блок будет иметь соотношение, которое обычно используется в видео.
+
+.example {
+  @include responsive-ratio(16, 9);
+}
+
+// === / Mixins ===
+
+// шаблоны
+
+// %tplborder {
+//   border-bottom: 5px dashed red; // пример шаблона
+// }
+
+// .link {
+//   @extend %tplborder;
+// }
